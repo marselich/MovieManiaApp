@@ -9,7 +9,7 @@ interface MovieApiService {
 
     @GET("movie/popular")
     suspend fun getPopularMovies(
-        @Query("api-key") apiKey: String
+        @Query("api_key") apiKey: String
     ): Response<MovieListDto>
 
 }

@@ -1,5 +1,6 @@
 package ru.marselich.data.mapper
 
+import ru.marselich.data.BuildConfig
 import ru.marselich.data.network.model.MovieDto
 import ru.marselich.data.network.model.MovieListDto
 import ru.marselich.domain.model.Movie
@@ -19,7 +20,7 @@ class MovieMapper {
         Movie(
             dto.id,
             dto.overview,
-            dto.posterPath,
+            BuildConfig.API_IMAGE_URL + dto.posterPath,
             dto.title,
             dto.rating
         )

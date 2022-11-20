@@ -3,7 +3,7 @@ package ru.marselich.data.network
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import ru.marselich.moviemaniaapp.BuildConfig
+import ru.marselich.data.BuildConfig
 import java.util.concurrent.TimeUnit
 
 

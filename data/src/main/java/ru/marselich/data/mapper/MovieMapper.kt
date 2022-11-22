@@ -16,13 +16,14 @@ class MovieMapper {
         )
 
 
-    fun mapMovieDtoToEntity(dto: MovieDto): Movie =
+    private fun mapMovieDtoToEntity(dto: MovieDto): Movie =
         Movie(
             dto.id,
             dto.overview,
             BuildConfig.API_IMAGE_URL + dto.posterPath,
             dto.title,
-            dto.rating
+            dto.rating,
+            dto.releaseDate
         )
 
 }
